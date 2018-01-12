@@ -39,17 +39,20 @@
     <StartupObject>FRC2018.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FRC.CameraServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.CameraServer.1.0.0\lib\net45\FRC.CameraServer.dll</HintPath>
+    <Reference Include="FRC.CameraServer, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FRC.CameraServer.1.0.1\lib\net45\FRC.CameraServer.dll</HintPath>
     </Reference>
     <Reference Include="FRC.NetworkTables.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FRC.NetworkTables.Core.3.1.6\lib\net45\FRC.NetworkTables.Core.dll</HintPath>
     </Reference>
     <Reference Include="FRC.OpenCvSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.OpenCvSharp.1.0.0\lib\net45\FRC.OpenCvSharp.dll</HintPath>
+      <HintPath>..\packages\FRC.OpenCvSharp.1.0.1\lib\net45\FRC.OpenCvSharp.dll</HintPath>
     </Reference>
-    <Reference Include="HAL, Version=2017.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.WPILib.Extras.2017.0.1\lib\net451\HAL.dll</HintPath>
+    <Reference Include="FRC.WPILib.CTRE, Version=2017.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FRC.WPILib.CTRE.2017.0.2\lib\net451\FRC.WPILib.CTRE.dll</HintPath>
+    </Reference>
+    <Reference Include="HAL, Version=2017.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FRC.WPILib.2017.0.3\lib\net451\HAL.dll</HintPath>
     </Reference>
     <Reference Include="NativeLibraryUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NativeLibraryUtilities.1.0.0\lib\net45\NativeLibraryUtilities.dll</HintPath>
@@ -61,17 +64,23 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="WPILib, Version=2017.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FRC.WPILib.2017.0.1\lib\net451\WPILib.dll</HintPath>
+    <Reference Include="WPILib, Version=2017.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FRC.WPILib.2017.0.3\lib\net451\WPILib.dll</HintPath>
     </Reference>
     <Reference Include="WPILib.Extras, Version=2017.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FRC.WPILib.Extras.2017.0.1\lib\net451\WPILib.Extras.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpModes\Auto.cs" />
+    <Compile Include="Interface\IOpMode.cs" />
+    <Compile Include="OpModes\Disabled.cs" />
+    <Compile Include="OpModes\TeleOp.cs" />
+    <Compile Include="OpModes\Test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="FRC2018.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
